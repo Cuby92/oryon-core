@@ -1,5 +1,5 @@
 {
-  "name": "oryon-core",
+  "name": "@cuby92/oryon-core",
   "version": "1.0.0",
   "description": "ORYON STUDIO official components, types, and functions library.",
   "main": "index.js",
@@ -29,5 +29,8 @@
   "peerDependencies": {
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
