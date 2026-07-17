@@ -1,6 +1,6 @@
 {
   "name": "@oryonstudio/oryon-core",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "ORYON STUDIO official components, types, and functions library.",
   "main": "index.js",
   "scripts": {
