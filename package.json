@@ -29,8 +29,10 @@
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
+    "next": "^16.2.10",
     "react": "^19.2.7",
-    "react-dom": "^19.2.7"
+    "react-dom": "^19.2.7",
+    "shaders": "^3.0.439"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
@@ -50,6 +52,11 @@
       "import": "./dist/functions.mjs",
       "require": "./dist/functions.js",
       "types": "./dist/functions.d.ts"
+    },
+    "./shaders": {
+      "import": "./dist/shaders.mjs",
+      "require": "./dist/shaders.js",
+      "types": "./dist/shaders.d.ts"
     }
   }
 }
