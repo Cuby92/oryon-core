@@ -17,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/Cuby92/oryon-core/issues"
   },
-  "homepage": "https://github.com/Cuby92/oryon-core#readme"
+  "homepage": "https://github.com/Cuby92/oryon-core#readme",
+  "devDependencies": {
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "tsup": "^8.5.1",
+    "typescript": "^7.0.2"
+  },
+  "peerDependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  }
 }
