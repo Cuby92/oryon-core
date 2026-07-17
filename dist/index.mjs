@@ -4,9 +4,9 @@ var __commonJS = (cb, mod) => function __require() {
 };
 
 // src/index.ts
-var require_index = __commonJS({
+var require_src = __commonJS({
   "src/index.ts"() {
   }
 });
-export default require_index();
+export default require_src();
 //# sourceMappingURL=index.mjs.map
