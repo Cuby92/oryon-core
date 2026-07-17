@@ -10,39 +10,38 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Cuby92/oryon-core.git"
+    "url": "git+https://github.com/oryonstudio/oryon-core.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
-    "url": "https://github.com/Cuby92/oryon-core/issues"
+    "url": "https://github.com/oryonstudio/oryon-core/issues"
   },
-  "homepage": "https://github.com/Cuby92/oryon-core#readme",
+  "homepage": "https://github.com/oryonstudio/oryon-core#readme",
   "devDependencies": {
     "@types/react": "^18.0.0 || ^19.0.0",
     "@types/react-dom": "^18.0.0 || ^19.0.0",
-    "esbuild-plugin-sass": "^0.7.0",
     "esbuild-sass-plugin": "^3.7.0",
     "sass": "^1.101.0",
     "tsup": "^8.5.1",
     "typescript": "^5.4.5"
   },
   "peerDependencies": {
-    "next": "^16.2.10",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "shaders": "^3.0.439"
+    "next": "^14.0.0 || ^15.0.0",
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0",
+    "shaders": "^2.0.0 || ^3.0.0"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
+      "main": "./dist/index.js",
+      "module": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     },
     "./types": {
       "types": "./dist/types.d.ts",
