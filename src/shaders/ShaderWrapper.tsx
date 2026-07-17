@@ -1,6 +1,6 @@
 'use client';
 
-import { useDeviceSpecs } from '../functions/useDeviceSpecs';
+import { useDeviceSpecs } from '../functions';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 
@@ -19,7 +19,7 @@ interface Props {
     videoPlaceholder?: string | undefined;
 }
 
-function ShaderWrapper({ children, width = '110vw', height = '110vh', style = {}, center = true, imagePlaceholder = '', video ='', videoPlaceholder = '' }: Props) {
+export function ShaderWrapper({ children, width = '110vw', height = '110vh', style = {}, center = true, imagePlaceholder = '', video ='', videoPlaceholder = '' }: Props) {
     const [mounted, setMounted] = useState<boolean>(false);
     const specs = useDeviceSpecs();
 
@@ -99,5 +99,3 @@ function ShaderWrapper({ children, width = '110vw', height = '110vh', style = {}
         </div>
     )
 }
-
-export default ShaderWrapper;

@@ -24,6 +24,7 @@
     "@types/react": "^18.0.0 || ^19.0.0",
     "@types/react-dom": "^18.0.0 || ^19.0.0",
     "esbuild-plugin-sass": "^0.7.0",
+    "esbuild-sass-plugin": "^3.7.0",
     "sass": "^1.101.0",
     "tsup": "^8.5.1",
     "typescript": "^5.4.5"
@@ -39,24 +40,24 @@
   },
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./types": {
+      "types": "./dist/types.d.ts",
       "import": "./dist/types.mjs",
-      "require": "./dist/types.js",
-      "types": "./dist/types.d.ts"
+      "require": "./dist/types.js"
     },
     "./functions": {
+      "types": "./dist/functions.d.ts",
       "import": "./dist/functions.mjs",
-      "require": "./dist/functions.js",
-      "types": "./dist/functions.d.ts"
+      "require": "./dist/functions.js"
     },
     "./shaders": {
+      "types": "./dist/shaders.d.ts",
       "import": "./dist/shaders.mjs",
-      "require": "./dist/shaders.js",
-      "types": "./dist/shaders.d.ts"
+      "require": "./dist/shaders.js"
     }
   }
 }

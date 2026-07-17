@@ -1,4 +1,4 @@
-import { Ref } from './refs';
+import { Ref } from '../types';
 
 export interface Children {
     children: Readonly<React.ReactNode>;

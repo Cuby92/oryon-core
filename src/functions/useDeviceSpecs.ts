@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { DeviceSpecs } from '../types/DeviceSpecs';
+import { DeviceSpecs } from '../types';
 
 export function useDeviceSpecs(): DeviceSpecs {
     const [specs, setSpecs] = useState<DeviceSpecs>({
